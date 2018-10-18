@@ -79,6 +79,20 @@ app.get('/',(req,res)=>{
 });
 
 
+app.get('/salbiyah',(req,res)=>{
+
+ res.render('salbiyah.hbs',{
+
+    pageTitle:'Salbiyah',
+    welcomeMessage: "welcome To Salbiyah's Page"
+
+ });
+
+
+});
+
+
+
 app.get('/about',(req,res)=>{
 
   res.render('about.hbs',{
@@ -89,6 +103,8 @@ app.get('/about',(req,res)=>{
   });
 
 });
+
+
 
 
 
